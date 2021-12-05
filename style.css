@@ -1,0 +1,223 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+margin: 0;
+}
+
+body {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  background-color: hsl(217, 54%, 11%);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  font-family: 'Outfit',sans-serif;
+}
+
+.container {
+background-color: hsl(216, 50%, 16%);
+box-shadow: 18px 10px 10px  8px #000;
+text-align: center;
+width: 350px;
+height: 590px;
+padding: 23px 22px;
+border-radius: 12px;
+}
+
+.image {
+position: relative;
+}
+
+.container img {
+display: block;
+max-width: 100%;
+width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: hsl(178, 100%, 50%, 0.45);
+  display: flex;;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  display: flex;;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay:active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  display: flex;;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+
+.overlay > img {
+  max-width: 15%;
+  color: #FFF;
+}
+
+.container h2 {
+color: hsl(0, 0%, 100%);
+float: left;
+margin: 20px 0;
+padding-left: 10px;
+padding-right: 60px;
+}
+
+.container h2:hover {
+color: hsl(178, 100%, 50%);
+float: left;
+margin: 20px 0;
+padding-left: 10px;
+padding-right: 60px;
+}
+
+.container h2:active {
+color: hsl(178, 100%, 50%);
+float: left;
+margin: 20px 0;
+padding-left: 10px;
+padding-right: 60px;
+}
+.container p:nth-child(2n+1) {
+
+padding-left: 10px;
+text-align: left;
+margin: 30px 0;
+}
+
+.offer {
+width: auto;
+height: 30px;
+margin-bottom: 10px;
+}
+
+.offer p:first-child {
+  color: hsl(178, 100%, 50%);
+  float: left;
+  margin: 0;
+}
+
+.offer p:nth-last-of-type(odd) {
+  color: hsl(215, 51%, 70%);
+  float: right;
+  margin-right: 3px;
+}
+
+#eth-img{
+  width: 10px;
+  height: auto;
+  display: inline;
+  position: relative;
+  top: 1px;
+  right: 5px;
+}
+
+#clock-img {
+  display: inline;
+  width: 17px;
+  height: auto;
+  position: relative;
+  top: 1px;
+  right: 5px;
+}
+
+footer {
+  height: 50px;
+  width: auto;
+  padding-top: 15px;
+  border-top: 1px solid hsl(215, 51%, 70%);
+}
+
+.container > footer > img{
+  max-width: 11%;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 50%;
+  float: left;
+
+}
+footer p:last-of-type {
+  display: inline;
+  float: left;
+  padding-top: 3px;
+  padding-left: 10px;
+}
+
+footer > p > span > a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+footer > p > span > a:link {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+footer > p > span > a:visited {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+footer > p > span > a:hover {
+  color: hsl(178, 100%, 50%);
+  text-decoration: none;
+}
+
+footer > p > span > a:active {
+  color: hsl(178, 100%, 50%);
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 85%;
+    height: auto;
+  }
+
+  .container h2 {
+  color: hsl(0, 0%, 100%);
+  float: left;
+  margin: 20px 0;
+  padding-left: 10px;
+  padding-right: 30px;
+  }
+}
